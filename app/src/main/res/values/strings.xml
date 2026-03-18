@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hospital Connect</string>
+
+    <!-- Task: Service Browsing List (Figure 1) -->
+    <string-array name="services_array">
+        <item>-- Select a Service --</item>
+        <item>CL001 - Cleaning</item>
+        <item>EP002 - Equipment Assistance</item>
+        <item>LC001 - Linen Change</item>
+        <item>PS001 - Porter Services</item>
+    </string-array>
+</resources>

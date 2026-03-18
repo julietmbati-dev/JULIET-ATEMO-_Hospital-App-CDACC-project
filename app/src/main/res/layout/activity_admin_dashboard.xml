@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F7F6">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Supervisor Panel"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#005792"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="12sp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    <!-- Navigation Tab Buttons (Updated to weightSum="3") -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnViewRequests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Requests"
+            android:textSize="10sp"
+            android:layout_marginEnd="2dp"
+            android:backgroundTint="#005792"/>
+
+        <Button
+            android:id="@+id/btnViewUsers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Patients"
+            android:textSize="10sp"
+            android:layout_marginHorizontal="2dp"
+            android:backgroundTint="#005792"/>
+
+        <!-- ADDED THIS BUTTON TO FIX THE ERROR -->
+        <Button
+            android:id="@+id/btnManageServices"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Services"
+            android:textSize="10sp"
+            android:layout_marginStart="2dp"
+            android:backgroundTint="#005792"/>
+    </LinearLayout>
+
+    <!-- The List View -->
+    <ListView
+        android:id="@+id/lvRequests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Add New"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#388E3C"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.HospitalApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Main branding colors -->
+        <item name="colorPrimary">#005792</item>
+        <item name="colorPrimaryVariant">#003d66</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary branding colors -->
+        <item name="colorSecondary">#00BBF0</item>
+        <item name="android:statusBarColor">#005792</item>
+    </style>
+</resources>

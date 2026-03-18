@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalapp">
+
+    <!-- Change Theme here to NoActionBar to remove the bold class names at the top -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital"
+        android:label="Hospital Connect"
+        android:roundIcon="@drawable/hospital"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 1. SPLASH SCREEN: The entry point of your app -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. REGISTER: Shown immediately after Splash -->
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Create Account"
+            android:exported="false" />
+
+        <!-- 3. LOGIN: Role-based entry -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="User Login"
+            android:exported="false" />
+
+        <!-- 4. MAIN ACTIVITY: For Patients (Service Requests) -->
+        <activity
+            android:name=".MainActivity"
+            android:label="Service Request"
+            android:exported="false" />
+
+        <!-- 5. ADMIN DASHBOARD: For Supervisors -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:label="Admin Control Panel"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

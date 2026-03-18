@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="#F4F7F6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#005792"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- MATCHING ID: regName -->
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- MATCHING ID: regEmail -->
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- MATCHING ID: regPass -->
+    <EditText
+        android:id="@+id/regPass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- MATCHING ID: regConfirmPass -->
+    <EditText
+        android:id="@+id/regConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- MATCHING ID: btnRegister -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="CREATE ACCOUNT"
+        android:backgroundTint="#005792"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
